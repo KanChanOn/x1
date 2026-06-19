@@ -1,2 +1,2 @@
-# x1.github.io
-# Strona
+# To jest moja pierwsza strona internetowa.
+# This is my first webpage
