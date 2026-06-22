@@ -13,17 +13,18 @@
 <button>Galeria🖼️</button>
 </a>
 <a href="hobby.html">
-<button>Hobby</button>
+<button>Hobby💻</button>
 </a>
 <hr>
 <h2>Napisz do mnie.</h2>
+<form action="wyslij.php" method="post">
 <form>
 <p>Imię: </p>
-<input type="text">
+<input type="text" name="imie" required>
 <p>Adres e-mail: </p>
-<input type="email">
+<input type="email" name="email" required>
 <p>Wiadomość: </p>
-<textarea rows="5">
+<textarea name="wiadomosc" rows="5" required>
 </textarea><br><br>
 <button type="submit">
 Wyślij
@@ -36,5 +37,18 @@ Wyczyść
 <hr>
 <hr>
 <footer><p>Autor strony: Iwo Kwietowicz</p></footer>
+<p>Liczba odwiedzin:</p>
+  <div id="licznik"></div>
+  <script>
+    let odwiedziny = 
+      localStorage.getItem("odwiedziny");
+    if (odwiedziny == null) {
+      odwiedziny=1;
+    } else {
+      odwiedziny=Number(odwiedziny)+1;
+    }
+    localStorage.setItem("odwiedziny",odwiedziny);
+    document.getElementById("licznik").innerHTML=odwiedziny;
+  </script>
 </body>
 </html>
