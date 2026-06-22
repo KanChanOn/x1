@@ -31,3 +31,8 @@ button:hover{
 	style = text-decoration: none;
 	transform: scale(1.1);
 	}
+licznik {
+        font-size: 40px;
+        color: navy;
+        font-weight: bold;
+        }
