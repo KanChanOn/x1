@@ -27,5 +27,18 @@
 <h2><font color="orange"><marquee>Mam nadzieję, że strona się podoba.</marquee></font></h2>
 </center>
 <h3><marquee>Zapraszam do skorzystania z Pixabay.</marquee></h3>
+  <p>Liczba odwiedzin:</p>
+  <div id="licznik"></div>
+  <script>
+    let odwiedziny = 
+      localStorage.getItem("odwiedziny");
+    if (odwiedziny == null) {
+      odwiedziny=1;
+    } else {
+      odwiedziny=Number(odwiedziny)+1;
+    }
+    localStorage.setItem("odwiedziny",odwiedziny);
+    document.getElementById("licznik").innerHTML=odwiedziny;
+  </script>
 </body>
 </html>
