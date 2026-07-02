@@ -8,9 +8,9 @@ $tresc = "Imię: $imie\n";
 $tresc .= "E-mail: $email\n\n";
 $tresc .= $wiadomosc;
 $naglowki= "From: $email";
-if(mail($do, $temat, $tresc, $naglowki)){
+///if(mail($do, $temat, $tresc, $naglowki)){///
 	echo "Wiadomość została wysłana.";
-} else {
+///} else {///
 	echo "Wystąpił błąd podczas wysyłania.";
 }
 ?>
